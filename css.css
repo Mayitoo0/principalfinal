@@ -14,7 +14,7 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     width: 40%;
-    height: 800px;
+    height: 100%;
     margin-top: 0;
     margin-left: 30%;
     margin-right: 30%;
