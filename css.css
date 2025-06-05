@@ -1,72 +1,107 @@
-#body{
-    background-color: #FFDAB3;
-}
-#titulo{
-    color: #574964;
-    text-align: center;
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 500%;
-}
-#entregables{
-    background-color: #C8AAAA;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    height: 100%;
-    margin-top: 0;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px #626163;
+@font-face {
+    font-family: 'MiFuente';
+    src: url('Ketchum.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+body {
     
-#imagen1 {
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
-}
-#imagen2 {
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
-}
-#imagen3{
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
-}
-#imagen4{
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
-}
-#imagen5{
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
-}
-#imagen6{
-    width: 300px;
-    height: 180px;
-    margin: 10%;
-    border-radius: 5px;
+    font-family:'MiFuente', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
 }
 
-h2{
+#principal {
+    background: #fff;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    padding: 30px 20px;
     text-align: center;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    color: #9F8383;
-    font-size: 250%;
-    font-family: Verdana,Geneva,sans-serif;
+    height: 100%;
+    background: linear-gradient(90deg, #0066ff 0%, #0bff33 20%, #fbff00 40%, #ff7300 70%, #ff0000 80%, #7700ff 100%);
 }
-#descripcion{
-    margin-bottom: 5%;
+
+#pokemon {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 3em;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.imges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.imges img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#tipo {
+    font-weight: bold;
+    color: #4e8cff;
+    margin-bottom: 10px;
+}
+
+#altura, #peso {
+    color: #000000;
+    font-size: 2.6em;
+    margin: 10px;
+}
+#stats {
+    margin-top: 18px;
+    text-align: left;
+}
+
+.daticos{
+    display: flex;
+    justify-content: center;
+}
+.pokecard{
+    display: flex;
+    flex-direction: row;
+    
+}
+.muestrapokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.daticos{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin-top: 0;
+    padding-left: 3%;
+    font-size: 20px;
 }
